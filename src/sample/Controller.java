@@ -96,7 +96,7 @@ public class Controller {
 
     @FXML
     public void initialize() {
-        currentTimeLabel.setText(clockModel.setTime().toString());
+//        currentTimeLabel.setText(clockModel.setTime().toString());
         currentTimeLabel.setText(String.valueOf(clockModel.getHour()) + ":" + String.valueOf(clockModel.getMinute()));
         timeLabel1.setVisible(false);
         timeLabel2.setVisible(false);

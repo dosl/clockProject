@@ -8,6 +8,9 @@ public class ClockModel {
     private LocalDateTime localDateTime = LocalDateTime.now();
     private int hour = date.getHours();
     private int minute = date.getMinutes();
+    private int sec = date.getSeconds();
+
+
 //    private int hour = localDateTime.getHour();
 //    private int minute = localDateTime.getMinute();
 
@@ -42,5 +45,9 @@ public class ClockModel {
 
     public Date setTime() {
         return date;
+    }
+
+    public int getSec() {
+        return sec;
     }
 }
