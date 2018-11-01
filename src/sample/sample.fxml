@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
 
 <GridPane alignment="center" hgap="10" prefHeight="418.0" prefWidth="522.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -26,11 +27,39 @@
             <Label fx:id="timeLabel3" layoutX="39.0" layoutY="134.0" prefHeight="17.0" prefWidth="96.0" text="Label3" />
             <Label fx:id="timeLabel4" layoutX="39.0" layoutY="176.0" prefHeight="17.0" prefWidth="96.0" text="Label4" />
             <Label fx:id="timeLabel5" layoutX="39.0" layoutY="214.0" prefHeight="17.0" prefWidth="96.0" text="Label5" />
-            <Button fx:id="enterButton" layoutX="39.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleEnterButtonClick" text="Enter" />
-            <Button fx:id="cancelButton" layoutX="151.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleCancelButtonClick" text="Cancel" />
+            <Button fx:id="enterButton" layoutX="284.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleEnterButtonClick" text="Enter" />
+            <Button fx:id="cancelButton" layoutX="354.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleCancelButtonClick" text="Cancel" />
             <TextField fx:id="inputHourTextfield" layoutX="271.0" layoutY="57.0" />
             <TextField fx:id="inputMinuteTextfield" layoutX="271.0" layoutY="101.0" />
             <Label fx:id="resultLabel" layoutX="314.0" layoutY="26.0" text="Label" />
+            <Line fx:id="position1_1" endX="-100.0000228881836" endY="34.0" layoutX="263.0" layoutY="241.0" startX="-100.0" />
+            <Line fx:id="position1_2" endX="-62.399993896484375" endY="0.2928924560546875" layoutX="255.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
+            <Line fx:id="position1_3" endX="0.100006103515625" endY="-17.707107543945312" layoutX="193.0" layoutY="259.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position1_4" endX="36.392913818359375" endY="4.585784912109375" layoutX="156.0" layoutY="271.0" startX="7.1999969482421875" startY="4.70709228515625" />
+            <Line fx:id="position1_5" endX="-100.0000228881836" endY="34.0" layoutX="263.0" layoutY="277.0" startX="-100.0" />
+            <Line fx:id="position1_6" endX="36.80000305175781" endY="4.70709228515625" layoutX="156.0" layoutY="307.0" startX="7.7071075439453125" startY="4.70709228515625" />
+            <Line fx:id="position1_7" endX="0.100006103515625" endY="-17.707107543945312" layoutX="193.0" layoutY="294.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position2_1" endX="-100.0000228881836" endY="34.0" layoutX="303.0" layoutY="242.0" startX="-100.0" />
+            <Line fx:id="position2_4" endX="36.80000305175781" endY="4.70709228515625" layoutX="196.0" layoutY="271.0" startX="7.1999969482421875" startY="4.70709228515625" />
+            <Line fx:id="position2_2" endX="-62.399993896484375" endY="0.2928924560546875" layoutX="295.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
+            <Line fx:id="position2_3" endX="0.100006103515625" endY="-17.707107543945312" layoutX="232.0" layoutY="259.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position2_6" endX="38.007110595703125" endY="4.70709228515625" layoutX="195.0" layoutY="307.0" startX="7.7071075439453125" startY="4.70709228515625" />
+            <Line fx:id="position2_5" endX="-100.0" endY="36.20709228515625" layoutX="303.0" layoutY="275.0" startX="-100.0" />
+            <Line fx:id="position2_7" endX="0.100006103515625" endY="-17.707107543945312" layoutX="232.0" layoutY="295.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position3_1" endX="-100.0000228881836" endY="34.0" layoutX="346.0" layoutY="241.0" startX="-100.0" />
+            <Line fx:id="position3_4" endX="36.80000305175781" endY="4.70709228515625" layoutX="239.0" layoutY="271.0" startX="7.1999969482421875" startY="4.70709228515625" />
+            <Line fx:id="position3_3" endX="0.100006103515625" endY="-17.707107543945312" layoutX="276.0" layoutY="259.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position3_2" endX="-62.399993896484375" endY="0.2928924560546875" layoutX="338.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
+            <Line fx:id="position3_5" endX="-100.0" endY="36.20709228515625" layoutX="346.0" layoutY="275.0" startX="-100.0" />
+            <Line fx:id="position3_6" endX="38.007110595703125" endY="4.70709228515625" layoutX="237.0" layoutY="307.0" startX="7.7071075439453125" startY="4.70709228515625" />
+            <Line fx:id="position3_7" endX="0.100006103515625" endY="-17.707107543945312" layoutX="276.0" layoutY="294.0" startX="0.3000030517578125" startY="17.20709228515625" />
+            <Line fx:id="position4_1" endX="-100.0000228881836" endY="34.0" layoutX="383.0" layoutY="241.0" startX="-100.0" />
+            <Line fx:id="position4_4" endX="36.80000305175781" endY="4.70709228515625" layoutX="275.0" layoutY="271.0" startX="7.1999969482421875" startY="4.70709228515625" />
+            <Line fx:id="position4_3" endX="-100.0000228881836" endY="34.0" layoutX="412.0" layoutY="240.0" startX="-100.0" />
+            <Line fx:id="position4_2" endX="-62.399993896484375" endY="0.2928924560546875" layoutX="376.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
+            <Line fx:id="position4_5" endX="-100.0000228881836" endY="34.0" layoutX="384.0" layoutY="277.0" startX="-100.0" />
+            <Line fx:id="position4_6" endX="36.80000305175781" endY="4.70709228515625" layoutX="275.0" layoutY="307.0" startX="7.1999969482421875" startY="4.70709228515625" />
+            <Line fx:id="position4_7" endX="-100.0000228881836" endY="34.0" layoutX="412.0" layoutY="274.0" startX="-100.0" />
          </children>
       </Pane>
    </children>
