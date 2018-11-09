@@ -50,4 +50,5 @@ public class ClockModel {
     public int getSec() {
         return sec;
     }
+
 }

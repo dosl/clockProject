@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <GridPane alignment="center" hgap="10" prefHeight="418.0" prefWidth="522.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
@@ -56,10 +57,16 @@
             <Line fx:id="position4_1" endX="-100.0000228881836" endY="34.0" layoutX="383.0" layoutY="241.0" startX="-100.0" />
             <Line fx:id="position4_4" endX="36.80000305175781" endY="4.70709228515625" layoutX="275.0" layoutY="271.0" startX="7.1999969482421875" startY="4.70709228515625" />
             <Line fx:id="position4_3" endX="-100.0000228881836" endY="34.0" layoutX="412.0" layoutY="240.0" startX="-100.0" />
-            <Line fx:id="position4_2" endX="-62.399993896484375" endY="0.2928924560546875" layoutX="376.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
-            <Line fx:id="position4_5" endX="-100.0000228881836" endY="34.0" layoutX="384.0" layoutY="277.0" startX="-100.0" />
+            <Line fx:id="position4_2" endX="-64.70712280273438" endY="0.29290771484375" layoutX="376.0" layoutY="240.0" startX="-92.00001525878906" startY="0.2928924560546875" />
+            <Line fx:id="position4_5" endX="-100.0000228881836" endY="34.0" layoutX="383.0" layoutY="277.0" startX="-100.0" />
             <Line fx:id="position4_6" endX="36.80000305175781" endY="4.70709228515625" layoutX="275.0" layoutY="307.0" startX="7.1999969482421875" startY="4.70709228515625" />
-            <Line fx:id="position4_7" endX="-100.0000228881836" endY="34.0" layoutX="412.0" layoutY="274.0" startX="-100.0" />
+            <Line fx:id="position4_7" endX="-99.69998168945312" endY="38.207061767578125" layoutX="412.0" layoutY="274.0" startX="-100.0" />
+            <Button fx:id="editButton" layoutX="328.0" layoutY="181.0" mnemonicParsing="false" text="Edit" />
+            <Label fx:id="timeLabel" layoutX="216.0" layoutY="330.0" prefHeight="35.0" prefWidth="96.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

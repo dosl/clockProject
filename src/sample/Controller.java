@@ -1,11 +1,19 @@
 package sample;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.shape.Line;
+import javafx.util.Duration;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class Controller {
     ClockModel clockModel = new ClockModel();
@@ -92,10 +100,30 @@ public class Controller {
     TextField inputMinuteTextfield;
     @FXML
     Label resultLabel;
+    @FXML
+    Button editButton;
+    @FXML
+    Label timeLabel;
+
     private int count = 0;
 
     @FXML
     public void initialize() {
+        DateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
+        Timeline timeline = new Timeline((
+                new KeyFrame(
+                        Duration.millis(500), event -> {
+                    final long diff = System.currentTimeMillis();
+                    if (diff < 0) {
+                        timeLabel.setText(timeFormat.format(0));
+                    } else {
+                        timeLabel.setText(timeFormat.format(diff));
+                    }
+                }
+                )
+        ));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
 //        currentTimeLabel.setText(clockModel.setTime().toString());
         currentTimeLabel.setText(String.valueOf(clockModel.getHour()) + ":" + String.valueOf(clockModel.getMinute()));
         timeLabel1.setVisible(false);
