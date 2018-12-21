@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Edit">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditController">
    <children>
-      <GridPane prefHeight="400.0" prefWidth="600.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-      </GridPane>
+      <TableView fx:id="tableView" layoutX="36.0" layoutY="76.0" prefHeight="246.0" prefWidth="217.0">
+         <columns>
+            <TableColumn prefWidth="109.0" text="Hour">
+               <cellValueFactory>
+                  <PropertyValueFactory property="hour" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="107.0" text="Minute">
+               <cellValueFactory>
+                  <PropertyValueFactory property="minute" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label layoutX="270.0" layoutY="103.0" text="Hour" />
+      <Label layoutX="270.0" layoutY="166.0" text="Minute" />
+      <ComboBox fx:id="hourComboBox" layoutX="350.0" layoutY="99.0" prefWidth="150.0" />
+      <ComboBox fx:id="minuteComboBox" layoutX="350.0" layoutY="162.0" prefWidth="150.0" />
+      <Button fx:id="enterButton" layoutX="65.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleEnterButtonClick" text="Enter" />
+      <Button fx:id="cancel" layoutX="425.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleCancelButtonClick" text="Cancel" />
    </children>
 </AnchorPane>

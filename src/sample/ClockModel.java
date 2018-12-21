@@ -1,54 +1,62 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class ClockModel {
     Date date = new Date();
-    private LocalDateTime localDateTime = LocalDateTime.now();
+//    private LocalDateTime localDateTime = LocalDateTime.now();
     private int hour = date.getHours();
     private int minute = date.getMinutes();
     private int sec = date.getSeconds();
+    private static ClockModel instance = null;
+    private static ObservableList<ClockModel> timeList = FXCollections.observableArrayList();
 
-
-//    private int hour = localDateTime.getHour();
+    //    private int hour = localDateTime.getHour();
 //    private int minute = localDateTime.getMinute();
 
+    public void addTimeList(ClockProperty o){
+        timeList.add(o);
+    }
 
     public ClockModel() {
         this.date = date;
-    }
-
-    public LocalDateTime getLocalDateTime() {
-        return localDateTime;
-    }
-
-    public void setLocalDateTime(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
     }
 
     public int getHour() {
         return hour;
     }
 
-    public void setHour(int hour) {
-        this.hour = hour;
-    }
 
     public int getMinute() {
         return minute;
     }
 
-    public void setMinute(int minute) {
-        this.minute = minute;
-    }
-
-    public Date setTime() {
-        return date;
-    }
-
     public int getSec() {
         return sec;
     }
+    public static ClockModel getInstance(){
+        if (instance == null) {
+            instance = new ClockModel();
+        }
+        return instance;
+    }
+
+    public ObservableList<ClockModel> getTimeList() {
+        return timeList;
+    }
+
+//    public String toString(){
+//        String result = "";
+//        for (int i = 0; i < timeList.size(); i++) {
+//            result+= timeList.get(i);
+//        }
+//        return result;
+//
+//    }
 
 }
