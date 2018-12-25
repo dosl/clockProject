@@ -22,6 +22,9 @@ public class ClockModel {
     public void addTimeList(ClockProperty o){
         timeList.add(o);
     }
+    public void removeTimeList(Object o){
+        timeList.remove(o);
+    }
 
     public ClockModel() {
         this.date = date;
@@ -50,7 +53,11 @@ public class ClockModel {
         return timeList;
     }
 
-//    public String toString(){
+    @Override
+    public String toString() {
+        return hour + " " + minute ;
+    }
+    //    public String toString(){
 //        String result = "";
 //        for (int i = 0; i < timeList.size(); i++) {
 //            result+= timeList.get(i);
