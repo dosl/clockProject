@@ -26,7 +26,7 @@
          <children>
             <Button fx:id="enterButton" layoutX="55.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleEnterButtonClick" text="Enter" />
             <Button fx:id="cancelButton" layoutX="415.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleCancelButtonClick" text="Cancel" />
-            <Button fx:id="editButton" layoutX="238.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleEditButtonClick" text="Remove" />
+            <Button fx:id="editButton" layoutX="238.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleRemoveButtonClick" text="Remove" />
             <Label fx:id="timeLabel" layoutX="208.0" layoutY="31.0" prefHeight="35.0" prefWidth="96.0" text="Label">
                <font>
                   <Font size="24.0" />

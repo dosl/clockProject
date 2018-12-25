@@ -141,7 +141,7 @@ public class HomeController {
     }
 
     @FXML
-    public void handleEditButtonClick(ActionEvent actionEvent) {
+    public void handleRemoveButtonClick(ActionEvent actionEvent) {
         Stage stage = new Stage();
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Remove.fxml"));
